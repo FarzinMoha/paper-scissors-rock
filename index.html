@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>paper scissors rock</title>
+  </head>
+  <body>
+    <section class="container">
+      <button id="again" class="again-btn">Again</button>
+      <div class="left">
+        <div class="user">
+          <h1 class="user-title">Start and select</h1>
+          <div class="image-container">
+            <img id="paper" class="image" src="./paper.jpg" alt="paper" data-name="paper" />
+            <img id="rock" class="image" src="./rock.jpg" alt="rock" data-name="rock"/>
+            <img id="scissors" class="image" src="./scissors.jpg" alt="scissors" data-name="scissors" />
+          </div>
+        </div>
+        <div class="cpu">
+          <h1 class="user-title">CPU</h1>
+          <div class="image-container">
+            <img data-name="paper" id="paper-cpu" class="image-cpu" src="./paper.jpg" alt="paper" />
+            <img data-name="rock" id="rock-cpu" class="image-cpu" src="./rock.jpg" alt="rock" />
+            <img data-name="scissors" id="scissors-cpu" class="image-cpu" src="./scissors.jpg" alt="scissors" />
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h1 class="right-title">RESULT</h1>
+        <div class="result">
+          <div class="result-section">
+            <p>User</p>
+            <p id="win">0</p>
+          </div>
+          <div class="result-section">
+            <p>Cpu</p>
+            <p id="loos">0</p>
+          </div>
+          <div class="result-section">
+            <p>Draw</p>
+            <p id="draw">0</p>
+          </div>
+        </div>
+        <button class="btn">reset</button>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
